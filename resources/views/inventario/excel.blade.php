@@ -1,0 +1,34 @@
+<table>
+    <thead>
+        <tr>
+            <th>Codigo</th>
+            <th>producto</th>
+            <th>Marca</th>
+            <th>Precio</th>
+            <th>Talla</th>
+            <th>Tipo</th>
+            <th>Color</th>
+            <th>Disponibilidad</th>
+            <th>Alquiler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach($datos as $item)
+        <tr>
+            <td>{{$item['codigo']}}</td>
+            <td>{{$item['producto']}}</td>
+            <td>{{$item['marca']}}</td>
+            <td>{{$item['precio']}}</td>
+            <td>{{$item['talla']}}</td>
+            <td>{{$item['tipo']}}</td>
+            <td>{{$item['color']}}</td>
+            @if($item['disponibilidad'] ==1)
+                <td>Disponible</td>
+            @else 
+                <td>Alquilado</td>
+             @endif
+            <td>{{$item['alquiler']}}</td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>

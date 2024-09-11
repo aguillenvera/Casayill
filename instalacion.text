@@ -1,0 +1,34 @@
+Instalar laragon desde su web oficial https://laragon.org/download/index.html
+la version completa
+Instalar Composer https://getcomposer.org/download/ 
+
+1. Abra el programa Laragon, dale a iniciar .
+2. darle a base de datos en la interfaz
+3. Pulse el boton abrir.
+4. Ahora vamos a crear una base de datos para nuestro proyecto Pulse click derecho en la parte izquierda donde hay como una lista.
+5. Seleccione crear nuevo y luego base de datos y le coloca el nombre inventario.
+6. Abra una terminal donde esta la aplicacion descargada (haciendo click derecho y open terminal en el explorador de archivos).
+7. escriba los siguientes comandos en orden :
+
+    _> composer install
+    _> php artisan key:generate
+    _> php artisan migrate --seed 
+
+8. ahora en los iconos ocultos de la barra de navegacion de windows busque el icono de laragon y le da click derecho, arrastre el mouse hacia www 
+y luego le da click en el proyecto que se llama inventario 
+
+9. Ahora tiene instalada la aplicacion el usuario predeterminado la primera vez es admin@example.com y la contraseña es 1234 
+
+
+-------Ya instala ------- 
+
+Cuando ya este instalado el proyecto solo tiene que seguir estos pasos
+
+1. abrir el programa laragon dale a iniciar
+2. acceder directamente a la web si ya la tiene en su navegador o en la barra de navegacion de windows busque el icono de laragon y le da click derecho, arrastre el mouse hacia www 
+y luego le da click en el proyecto que se llama inventario 
+
+
+
+
+
